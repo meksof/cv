@@ -1,3 +1,35 @@
+
+/* action buttons area */
+.action-buttons {
+    text-align: center;
+    padding: 15px 0 0 0;
+    .btn {
+        margin-right: 15px;
+    }
+    &.bottom {
+      padding-bottom: 60px;
+    }
+}
+.mobile-action-buttons{
+  text-align: center;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  padding: 15px 0 0 0;
+  width: 100%;
+  display: none;
+  z-index: 2;
+  border-top: 1px solid #ddd;
+  .btn {
+    margin-right: 4%;
+  }
+  @media (max-width: 767px)
+  {
+      display: block;
+  }
+
+}
+/* buttons */
 .btn {
     transition: opacity .25s ease-in-out;
     display: inline-block;

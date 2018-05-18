@@ -51,7 +51,18 @@ var config = {
                     loader: 'file-loader',
                     options: {
                         name: '[name].[ext]',
-                        outputPath: 'fonts/'
+                        outputPath: 'assets/fonts/'
+                    }
+                }]
+            },
+            {
+                
+                test: /\.(png|jpg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'assets/img/'
                     }
                 }]
             }
