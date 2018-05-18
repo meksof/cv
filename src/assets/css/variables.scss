@@ -1,8 +1,8 @@
 /** Colors */
-$button-primary: #3e94e4;
-$button-primary-hover: #267ccc;
 $blue: #425370;
-$turkoise: #18548c;
+$turkoise-300: #3e94e4;
+$turkoise-500: #267ccc;
+$turkoise-700: #18548c;
 $green: #388e3c;
 $teal-500: #009688;
 $orange: #f57c00;
@@ -11,7 +11,9 @@ $red-500: #f44336;
 $red-600: #e53935;
 $red-700: #d32f2f;
 
-$sidebar-bg-color: $turkoise;
+$button-primary: $turkoise-300;
+$button-primary-hover: $turkoise-500;
+$sidebar-bg-color: $turkoise-500;
 $badge: $red-300;
 
 
