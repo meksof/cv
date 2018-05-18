@@ -1,0 +1,27 @@
+$fa-font-path: "../fonts";
+@import "~font-awesome/scss/font-awesome.scss";
+@import "./variables";
+
+/* Custom */
+@import './bootstrap-custom';
+@import "./modal";
+ul{
+    list-style: none;
+}
+/* Extras */
+@import "./extras";
+/* Buttons */
+@import './buttons';
+/* Checkboxes */
+.b1 {
+    .iradio {
+        margin-top: 7px;
+    }
+}
+@import './icheck';
+/* badge */
+@import './badge';
+/* Form */
+@import './form';
+/* Helpers */
+@import './helpers';

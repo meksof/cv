@@ -1,0 +1,25 @@
+{
+  "name": "CV",
+  "version": "1.0.0",
+  "description": "CV website",
+  "authors": [
+    "Sofiene <meksof@gmail.com>"
+  ],
+  "main": "src/app.js",
+  "keywords": [
+    "jquery",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iCheck": "^1.0.2"
+  }
+}

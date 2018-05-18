@@ -1,0 +1,37 @@
+.btn {
+    transition: opacity .25s ease-in-out;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 3px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    &.btn-outline {
+        border: 1px solid $button-primary;
+        color: $button-primary;
+        background: transparent;
+        &:hover {
+            color: $button-primary;
+        }
+    }
+    &.btn-primary {
+        border: 0px;
+        background: $button-primary;
+        -webkit-box-shadow: 0 2px 0 $button-primary-hover;
+        box-shadow: 0 2px 0 $button-primary-hover;
+        color: white;
+        font-weight: bold;
+        padding: 10px 30px;
+        &:hover {
+            color: white;
+            background-color: $button-primary-hover;
+        }
+    }
+}

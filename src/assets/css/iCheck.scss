@@ -1,0 +1,173 @@
+/* iCheck material design theme
+----------------------------------- */
+
+.icheckbox, .iradio {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.icheckbox:after, .iradio:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.icheckbox > input, .iradio > input {
+  margin: 0;
+}
+
+.icheckbox > .iCheck-helper, .iradio > .iCheck-helper {
+  z-index: 10;
+}
+
+.icheckbox {
+  border: 2px solid rgba(0, 0, 0, 0.54);
+  border-radius: 2px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+  &.checked:after, &.disabled:after {
+    content: '\e5ca';
+    font-family: "Material Icons";
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    left: -2px;
+    top: -6px;
+    line-height: 1.42857143;
+  }
+  &.hover.checked, &.checked {
+    background: $green;
+    border-color: $green !important;
+  }
+  &.disabled {
+    &:after {
+      display: none;
+    }
+    background: transparent;
+    background-clip: padding-box;
+    border-color: rgba(0, 0, 0, 0.26);
+    cursor: default;
+    &.checked {
+      background: transparent;
+      background-clip: padding-box;
+      border-color: rgba(0, 0, 0, 0.26);
+      cursor: default;
+      background: #bdbdbd !important;
+      border-color: #bdbdbd !important;
+      &:after {
+        display: block !important;
+      }
+    }
+  }
+}
+
+.input-danger .icheckbox {
+  &.checked{
+    border-color: $red-600;
+    &:after {
+      background: $red-600;
+    }
+  }
+}
+.input-warning .icheckbox {
+  &.checked{
+    border-color: $orange;
+    &:after {
+      background: $orange;
+    }
+  }
+}
+
+.icheckbox.indeterminate {
+  background: $green;
+  border-color: $green;
+  &:after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.iradio {
+  border: 2px solid rgba(0, 0, 0, 0.54);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  &:after {
+    content: '';
+    background: transparent;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    -webkit-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+  }
+  &.checked {
+    border-color: $green;
+    &:after {
+      background: $green;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  &.disabled {
+    border-color: rgba(0, 0, 0, 0.26);
+    cursor: default;
+    &:after {
+      background: rgba(0, 0, 0, 0.26);
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+}
+
+.input-danger .iradio {
+  &.checked {
+    border-color: $red-600;
+    &:after{
+      background: $red-600;
+    }
+  }
+}
+.input-warning .iradio {
+  &.checked {
+    border-color: $orange;
+    &:after{
+      background: $orange;
+    }
+  }
+}
+
+.disabled + .inline-label {
+  color: rgba(0, 0, 0, 0.26);
+  cursor: default;
+}
+
+.icheck-inline {
+  display: inline-block;
+  margin: 0 16px 16px 0;
+  + .parsley-errors-list {
+    margin-top: -8px;
+  }
+}
